@@ -4,9 +4,9 @@ function Cards({ item }) {
   return (
     <>
       <div className="mt-4 my-3 p-3 ">
-        <div className="card bg-base-100 w-92 shadow-xl hover:scale-105 duration-200 dark:bg-slate-800 dark:text-white">
+        <div className="card bg-base-100 w-90 shadow-xl hover:scale-105 duration-200 dark:bg-slate-800 dark:text-white">
           <figure>
-            <img src={item.image} alt="Note" />
+            <img src={item.image} className="w-80 h-80" alt="Note" />
           </figure>
           <div className="card-body">
             <h2 className="card-title">

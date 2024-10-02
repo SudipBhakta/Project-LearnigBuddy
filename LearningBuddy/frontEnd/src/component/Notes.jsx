@@ -12,7 +12,7 @@ function Notes() {
         <div className="pt-28 items-center justify-center text-center">
           <h1 className="text-2xl font-semibold md:text-4xl">
             Boost your learning with{" "}
-            <span className="text-pink-500">LearningBuddy :)</span>
+            <span className="text-fuchsia-600">LearningBuddy :)</span>
           </h1>
           <p className=" mt-12 ">
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempora
