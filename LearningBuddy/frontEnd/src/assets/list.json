@@ -89,5 +89,32 @@
         "category":"Action",
         "image":"https://img.freepik.com/free-vector/hand-drawn-flat-design-stack-books-illustration_23-2149341898.jpg?t=st=1727533007~exp=1727536607~hmac=23d191fe22ee6059e376091365c62dbde6739a3c570bffe3e01256f2c4528e9e&w=740"
 
+    },
+    {
+        "id":3,
+        "name":"Story Book",
+        "title":"loremLorem ipsum dolor sit amet consectetur adipisicing elit.",
+        "price":0,
+        "category":"Free",
+        "image":"https://img.freepik.com/free-vector/hand-drawn-flat-design-stack-books-illustration_23-2149341898.jpg?t=st=1727533007~exp=1727536607~hmac=23d191fe22ee6059e376091365c62dbde6739a3c570bffe3e01256f2c4528e9e&w=740"
+
+    },
+    {
+        "id":3,
+        "name":"Story Book",
+        "title":"loremLorem ipsum dolor sit amet consectetur adipisicing elit.",
+        "price":0,
+        "category":"Free",
+        "image":"https://img.freepik.com/free-vector/hand-drawn-flat-design-stack-books-illustration_23-2149341898.jpg?t=st=1727533007~exp=1727536607~hmac=23d191fe22ee6059e376091365c62dbde6739a3c570bffe3e01256f2c4528e9e&w=740"
+
+    },
+    {
+        "id":3,
+        "name":"Story Book",
+        "title":"loremLorem ipsum dolor sit amet consectetur adipisicing elit.",
+        "price":30,
+        "category":"Song",
+        "image":"https://img.freepik.com/free-vector/hand-drawn-flat-design-stack-books-illustration_23-2149341898.jpg?t=st=1727533007~exp=1727536607~hmac=23d191fe22ee6059e376091365c62dbde6739a3c570bffe3e01256f2c4528e9e&w=740"
+
     }
 ]

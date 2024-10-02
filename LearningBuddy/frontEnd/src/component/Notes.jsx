@@ -1,6 +1,6 @@
 import React from "react";
 import list from "../assets/list.json";
-import Cards from "../component/Cards";
+import CardsPaid from "../component/CardsPaid";
 import {Link} from "react-router-dom"
 
 function Notes() {
@@ -23,13 +23,13 @@ function Notes() {
             neque laudantium deserunt ratione distinctio magnam.
           </p>
           <Link to="/">
-          <button className="mt-6 bg-pink-500 text-white px-4 py-2 rounded-md hover:bg-pink-700 duration-300">Back</button>
+          <button className="text-white  bg-purple-700 hover:bg-blue-500 hover:text-black border-none mt-6 px-4 py-1  rounded-md duration-300">Back</button>
           </Link>
           
         </div>
         <div className="mt-12 grid grid-cols-1 md:grid-cols-4">
           {list.map((item)=>(
-            <Cards key={item.id} item={item}/>
+            <CardsPaid key={item.id} item={item}/>
           ))}
         </div>
       </div>
