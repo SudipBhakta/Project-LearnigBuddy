@@ -17,7 +17,7 @@ function Banner() {
               necessitatibus architecto? Amet neque natus laudantium hic rem
               deserunt dignissimos esse minus.
             </p>
-            <label className="input input-bordered flex items-center gap-2">
+            <label className="input input-bordered flex items-center gap-2 dark:text-black">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 16 16"
