@@ -32,12 +32,12 @@ function Login() {
               <br />
               <input
                 type="email"
-                placeholder="Enter Your email"
+                placeholder="Enter Your email "
                 className="w-80 px-3 py-2 border rounded-md outline-none"
                 {...register("email", { required: true })}
               />
               <br />
-              {errors.email && <span className="text-sm text-red-500">Email is required</span>}
+              {errors.email && <span className="text-sm text-red-500">Please enter your email</span>}
             </div>
             <div className="mt-2 space-y-2">
               <span>Password</span>
@@ -49,7 +49,7 @@ function Login() {
                 {...register("password", { required: true })}
               />
               <br />
-               {errors.password && <span className="text-sm text-red-500">Password is required</span>}
+               {errors.password && <span className="text-sm text-red-500">Please enter your password</span>}
             </div>
             <div className="flex justify-around mt-6">
               <button className=" text-white px-3 py-1 rounded-md bg-purple-700 hover:bg-blue-500 hover:text-black duration-300 cursor-pointer">
