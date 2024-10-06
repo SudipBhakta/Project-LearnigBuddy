@@ -1,10 +1,23 @@
-import React from "react";
-import list from "../assets/list.json";
+import {React, useEffect, useState}  from "react";
+//import list from "../assets/list.json";
 import CardsPaid from "../component/CardsPaid";
-import {Link} from "react-router-dom"
+import { Link } from "react-router-dom";
+import axios from "axios";
 
 function Notes() {
-  // console.log(list)
+  const [ note, setNote] = useState([]);
+  useEffect(() => {
+    const getNote = async () => {
+      try {
+        const noteRes =await axios.get("http://localhost:4000/note");
+        console.log(noteRes.data);
+        setNote(noteRes.data);
+      } catch (error) {
+        console.log("Error", error);
+      }
+    };
+    getNote();
+  },[]);
 
   return (
     <>
@@ -23,13 +36,14 @@ function Notes() {
             neque laudantium deserunt ratione distinctio magnam.
           </p>
           <Link to="/">
-          <button className="text-white  bg-purple-700 hover:bg-blue-500 hover:text-black border-none mt-6 px-4 py-1  rounded-md duration-300">Back</button>
+            <button className="text-white  bg-purple-700 hover:bg-blue-500 hover:text-black border-none mt-6 px-4 py-1  rounded-md duration-300">
+              Back
+            </button>
           </Link>
-          
         </div>
         <div className="mt-12 grid grid-cols-1 md:grid-cols-4">
-          {list.map((item)=>(
-            <CardsPaid key={item.id} item={item}/>
+          { note.map((item) => (
+            <CardsPaid key={item._id} item={item} />
           ))}
         </div>
       </div>

@@ -1,7 +1,12 @@
 import React, { useEffect, useState } from "react";
 import Login from "../component/Login"
+import { useAuth } from "../ContextAPI/Auth";
 
 function navBar() {
+
+  const[authUser,setAuthUser]=useAuth()
+  console.log(authUser)
+
   //Darkmode
   const [theme, setTheme] = useState(
     localStorage.getItem("theme") ? localStorage.getItem("theme") : "light"
@@ -43,7 +48,7 @@ function navBar() {
         <a href="/notes">Notes</a>
       </li>
       <li>
-        <a>Contact</a>
+        <a  href="/contact">Contact</a>
       </li>
       <li>
         <a>About</a>
