@@ -1,11 +1,10 @@
 import React, { useEffect, useState } from "react";
-import Login from "../component/Login"
+import Login from "../component/Login";
 import { useAuth } from "../ContextAPI/Auth";
 
 function navBar() {
-
-  const[authUser,setAuthUser]=useAuth()
-  console.log(authUser)
+  const [authUser, setAuthUser] = useAuth();
+  console.log(authUser);
 
   //Darkmode
   const [theme, setTheme] = useState(
@@ -48,10 +47,10 @@ function navBar() {
         <a href="/notes">Notes</a>
       </li>
       <li>
-        <a  href="/contact">Contact</a>
+        <a href="/about">About</a>
       </li>
       <li>
-        <a>About</a>
+        <a href="/contact">Contact</a>
       </li>
     </>
   );
@@ -154,8 +153,8 @@ function navBar() {
             <div className="">
               <a
                 className=" text-white px-3 py-2 rounded-md bg-purple-700 hover:bg-blue-500 hover:text-black duration-300 cursor-pointer"
-                onClick={() => document.getElementById("my_modal_3").showModal()
-
+                onClick={() =>
+                  document.getElementById("my_modal_3").showModal()
                 }
               >
                 Login

@@ -7,8 +7,9 @@ function Footer() {
       <footer className="footer footer-center  text-base-content rounded p-10 dark:bg-slate-900 dark:text-white">
         <nav className="grid grid-flow-col gap-4">
           <a href="/notes" className="link link-hover">Notes</a>
+          <a href="/about" className="link link-hover">About Us</a>
           <a href="/contact" className="link link-hover">Contact</a>
-          <a className="link link-hover">About Us</a>
+          
           <a href="/login" className="link link-hover">Login</a>
         </nav>
         <nav>
