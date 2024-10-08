@@ -1,5 +1,6 @@
 import React from "react";
 import HomeImg from "../assets/HomeImg.png";
+import { Link } from "react-router-dom";
 
 function Banner() {
   return (
@@ -29,12 +30,16 @@ function Banner() {
               </svg>
               <input type="text" className="grow" placeholder="Email" />
             </label>
-            
           </div>
-          <button className=" text-white  bg-purple-700 hover:bg-blue-500 hover:text-black duration-300 border-none mt-6 px-3 py-2  rounded-md ">Loging</button>
+          <div className="mt-6">
+            <Link to="/signup" className=" text-white  bg-purple-700 hover:bg-blue-500 hover:text-black duration-300 border-none  px-3 py-2  rounded-md ">
+            Register
+          </Link>
+          </div>
+          
         </div>
         <div className=" order-1 w-full md:w-1/2 md:mt-17">
-        <img src={HomeImg} className="w-92 h-92" alt="" />
+          <img src={HomeImg} className="w-92 h-92" alt="" />
         </div>
       </div>
     </>

@@ -21,14 +21,17 @@ function Login() {
       .then((res) => {
         console.log(res.data);
         if (res.data) {
-          toast.success("Login Sucessfull");
+          toast.success("Login Sucessfull", { duration: 3000 });
+          setTimeout(() => {
+            window.location.reload();
+          }, 1000);
         }
         localStorage.setItem("user", JSON.stringify(res.data.user));
       })
       .catch((err) => {
         if (err.response) {
           console.log(err);
-          toast.error("Error " + err.response.data.message);
+          toast.error("Error " + err.response.data.message, { duration: 3000});
         }
       });
   };
@@ -42,7 +45,7 @@ function Login() {
             {/* if there is a button in form, it will close the modal */}
             <Link
               to="/"
-              className="btn btn-sm btn-circle btn-ghost absolute right-2 top-2"
+              className="btn btn-sm btn-circle btn-ghost  absolute right-2 top-2 no-border"
               onClick={() => document.getElementById("my_modal_3").close()}
             >
               ✕

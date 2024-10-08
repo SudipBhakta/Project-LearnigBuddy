@@ -13,7 +13,7 @@ function FreeNotes() {
     const getNote = async () => {
       try {
         const noteRes = await axios.get("http://localhost:4000/note");
-        console.log(noteRes.data);
+        // console.log(noteRes.data);
         const data = noteRes.data.filter((data) => data.category === "Free")
         setNote(data);
       } catch (error) {
@@ -63,7 +63,7 @@ function FreeNotes() {
     <>
       <div className="max-w-screen-2xl container mx-auto md:px-20 px-4">
         <div>
-          <h1 className="font-bold text-xl pb-2">Free Notes</h1>
+          <h1 className="font-bold text-4xl pb-2">Free Notes</h1>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae
             adipisci aperiam incidunt aspernatur ab. Lorem, ipsum dolor. Ullam

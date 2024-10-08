@@ -23,14 +23,17 @@ function SignupToLogin() {
       .then((res) => {
         console.log(res.data);
         if (res.data) {
-          toast.success("Login Sucessfull");
+          toast.success("Login Sucessfull", { duration: 3000 });
+          setTimeout(() => {
+            window.location.href = '/';
+          }, 1000);
         }
         localStorage.setItem("user", JSON.stringify(res.data.user));
       })
       .catch((err) => {
         if (err.response) {
           console.log(err);
-          toast.error("Error " + err.response.data.message);
+          toast.error("Error " + err.response.data.message,{duration:3000});
         }
       });
   };
