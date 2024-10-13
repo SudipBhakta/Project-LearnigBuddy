@@ -60,36 +60,46 @@ function ContactUs() {
                   class="text-xl mt-1  text-blue-600"
                   name="call"
                 ></ion-icon>
-                <span>+91 7384515707</span>
+                <span>+917384515707</span>
               </div>
-              <div className="inline-flex space-x-2 items-center">
-                <ion-icon
-                  class="text-xl mt-1 text-blue-600"
-                  name="mail-open"
-                ></ion-icon>
-                <span>sudip.bhakta.123@gmail.com</span>
+              <div>
+                <a
+                  href="mailto:sudip.bhakta.123@gmail.com"
+                  className="inline-flex space-x-2 items-center"
+                >
+                  <ion-icon
+                    class="text-xl mt-1 text-blue-600"
+                    name="mail-open"
+                  ></ion-icon>
+                  <span>sudip.bhakta.123@gmail.com</span>
+                </a>
               </div>
-              <div className="inline-flex space-x-2 items-center">
-                <ion-icon
-                  class="text-xl mt-1  text-blue-600"
-                  name="logo-linkedin"
-                ></ion-icon>
-                <span>Sudip Bhakta</span>
+              <div>
+                <a
+                  href="https://wa.me/qr/GJ67ZDCH4FH7B1 "
+                  className="inline-flex space-x-2 items-center"
+                >
+                  <ion-icon
+                    class="text-xl mt-1  text-green-600"
+                    name="logo-whatsapp"
+                  ></ion-icon>
+                  <span>7384515707</span>
+                </a>
               </div>
               <div className=" py-10 space-x-6 text-3xl   items-center">
-                <a href="www.facebook.com">
+                <a href="https://www.facebook.com/profile.php?id=100006558045363">
                   <ion-icon
                     class="text-blue-800 hover:text-black"
                     name="logo-facebook"
                   ></ion-icon>
                 </a>
-                <a href="www.whatsapp.com">
+                <a href="https://www.linkedin.com/in/sudip-bhakta98">
                   <ion-icon
-                    class="text-green-600 hover:text-black"
-                    name="logo-whatsapp"
+                    class="text-blue-600 hover:text-black"
+                    name="logo-linkedin"
                   ></ion-icon>
                 </a>
-                <a href="www.instagrap.com">
+                <a href="https://www.instagram.com/s_bhaktaa/profilecard/?igsh=MWZtMTRucHpwN2wydg==">
                   <ion-icon
                     class="text-pink-600 hover:text-black"
                     name="logo-instagram"

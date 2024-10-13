@@ -1,6 +1,6 @@
 import React from "react";
 
-function Cards({ item }) {
+function CardsPaid({ item }) {
   
   return (
     <>
@@ -30,4 +30,4 @@ function Cards({ item }) {
   );
 }
 
-export default Cards;
+export default CardsPaid;

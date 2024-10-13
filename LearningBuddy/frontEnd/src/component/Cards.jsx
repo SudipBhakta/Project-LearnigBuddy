@@ -16,10 +16,10 @@ function Cards({ item }) {
             <p>{item.title}</p>
             <div className="card-actions  justify-center">
               {/* <div className="badge badge-outline py-2">${item.price}</div> */}
-              <div className="badge badge-outline cursor-pointer text-white bg-purple-700 hover:bg-blue-500 hover:text-black duration-300  mt-12 p-3 py-4 duration-200">
+              <div className="badge badge-outline cursor-pointer text-white bg-purple-700 hover:bg-blue-500 hover:text-black duration-300   p-3 py-3 duration-200">
                 Read Now
               </div>
-              <div className="badge badge-outline cursor-pointer text-white bg-purple-700 hover:bg-blue-500 hover:text-black duration-300  mt-12 p-3 py-4 duration-200">
+              <div className="badge badge-outline cursor-pointer text-white bg-purple-700 hover:bg-blue-500 hover:text-black duration-300   p-3 py-3 duration-200">
                 Download
               </div>
             </div>
