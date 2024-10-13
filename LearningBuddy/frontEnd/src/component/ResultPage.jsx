@@ -13,7 +13,7 @@ const ResultsPage = () => {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState("");
   const location = useLocation(); // Get the current location
-  const query = new URLSearchParams(location.search).get("query"); // Extract query from URL
+  const query = new URLSearchParams(location.search).get("query"); 
   const [authUser] = useAuth(); // Get authUser from the context
 
   useEffect(() => {

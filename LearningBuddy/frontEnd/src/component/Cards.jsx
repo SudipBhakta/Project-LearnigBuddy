@@ -9,7 +9,7 @@ function Cards({ item }) {
   const downloadPDF = () => {
     const link = document.createElement("a");
     link.href = pdfFile; // Use the same PDF path
-    link.download = "Full Stack Development Road Map.pdf"; // The name for the downloaded file
+    link.download = "Full Stack Development Road Map.pdf"; 
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link); // Clean up the link element
@@ -30,13 +30,13 @@ function Cards({ item }) {
             <p>{item.title}</p>
             <div className="card-actions justify-center">
               <div 
-                className="badge badge-outline cursor-pointer text-white bg-purple-700 hover:bg-blue-500 hover:text-black duration-300 p-3 py-3 duration-200"
+                className="badge badge-outline cursor-pointer text-white bg-purple-700 hover:bg-blue-500 hover:text-black duration-300 p-3 py-3 "
                 onClick={openPDF}
               >
                 Read Now
               </div>
               <div 
-                className="badge badge-outline cursor-pointer text-white bg-purple-700 hover:bg-blue-500 hover:text-black duration-300 p-3 py-3 duration-200"
+                className="badge badge-outline cursor-pointer text-white bg-purple-700 hover:bg-blue-500 hover:text-black duration-300 p-3 py-3 "
                 onClick={downloadPDF}
               >
                 Download

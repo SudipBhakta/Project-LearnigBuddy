@@ -54,6 +54,7 @@ function FreeNotes() {
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
+          initialSlide: 1,
         },
       },
     ],
