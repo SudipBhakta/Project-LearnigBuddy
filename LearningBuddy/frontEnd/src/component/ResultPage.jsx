@@ -47,7 +47,7 @@ const ResultsPage = () => {
           className="w-96 h-96 dark:opacity-60"
           alt=""
         />
-        <h1 className="text-center text-2xl font-semibold md:text-2xl text-red-600">
+        <h1 className="text-center text-xl font-semibold md:text-xl text-red-600">
           No Results found for :{" "}
           <span className="text-black dark:text-white">{query}</span>
         </h1>
@@ -57,12 +57,12 @@ const ResultsPage = () => {
 
   return (
     <div className="max-w-screen-2xl container mx-auto md:px-20 px-4">
-      <h1 className="pt-28 items-center justify-center text-center text-2xl font-semibold md:text-3xl text-fuchsia-600">
+      <h1 className="pt-28 items-center justify-center text-center text-2xl font-semibold md:text-xl text-fuchsia-600">
         Search Results for :{" "}
         <span className="text-black dark:text-white">{query}</span>
       </h1>
       {!authUser && (
-        <div className="mt-8 text-center text-lg">
+        <div className="mt-2 text-center text-lg">
           Please{" "}
           <Link
             to="/login"
@@ -73,7 +73,7 @@ const ResultsPage = () => {
           to see more results.
         </div>
       )}
-      <div className="mt-12 grid grid-cols-1 md:grid-cols-4 gap-4">
+      <div className="mt-3 grid grid-cols-1 md:grid-cols-4 gap-4">
         {results.map((item) =>
           // Show Cards and CardsPaid if authenticated; otherwise, show only Cards
           authUser ? (

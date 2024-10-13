@@ -51,7 +51,7 @@ function Banner() {
               />
             </label>
           </div>
-          <div className="mt-6 block md:hidden">
+          <div className="mt-4 mb-4 block md:hidden">
             <button
               className=" text-white  bg-purple-700 hover:bg-blue-500 hover:text-black duration-300 border-none  px-3 py-2  rounded-md "
               onClick={handleSearch}
